@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammed Ayan Khan – CSE Student &amp; Aspiring Developer portfolio." />
+  <title>Mohammed Ayan Khan | Portfolio</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <div class="sticky-container" id="mainNavContainer">
+    <nav class="navbar navbar-expand-lg" id="mainNav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home" aria-label="Mohammed Ayan Khan – home">
+          <span class="brand-bracket">&lt;</span>Ayan<span class="brand-bracket">/&gt;</span>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon"><i class="bi bi-list fs-2"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-1" role="list">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero-section d-flex align-items-center" aria-label="Hero introduction">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+
+          <!-- Text column -->
+          <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+            <p class="hero-greeting mb-2">
+              <i class="bi bi-hand-wave-fill me-1 text-warning"></i> Hello, I'm
+            </p>
+            <h1 class="hero-name">Mohammed<br><span class="highlight">Ayan Khan</span></h1>
+            <div class="hero-role-wrapper mb-3" aria-live="polite">
+              <span class="hero-role-static">I'm a&nbsp;</span>
+              <span class="hero-role-typed" id="typedRole" aria-label="CSE Student"></span>
+              <span class="hero-cursor" aria-hidden="true">|</span>
+            </div>
+            <p class="hero-intro text-muted mb-4">
+              Passionate Computer Science &amp; Engineering student shaping the future through clean code,
+              creative problem-solving, and a relentless drive to learn.
+              Fresher | Open to Internships &amp; Collaborations.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+              <a href="#projects" class="btn btn-primary btn-lg px-4 rounded-pill">
+                <i class="bi bi-grid-fill me-2"></i>View Projects
+              </a>
+              <a href="#contact" class="btn btn-outline-primary btn-lg px-4 rounded-pill">
+                <i class="bi bi-envelope-fill me-2"></i>Contact Me
+              </a>
+            </div>
+
+            <div class="social-icons d-flex gap-3 justify-content-center justify-content-lg-start">
+              <a href="https://github.com/mdayankhan60" target="_blank" rel="noopener noreferrer"
+                 class="social-icon" aria-label="GitHub profile">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:ayankhanmohammed100@gmail.com" class="social-icon" aria-label="Send email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+              <a href="tel:+919740583903" class="social-icon" aria-label="Call phone">
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="LinkedIn profile">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Avatar column -->
+          <div class="col-lg-5 order-1 order-lg-2 text-center">
+            <div class="hero-avatar-wrapper mx-auto">
+              <div class="hero-avatar-ring" aria-hidden="true"></div>
+              <img src="assets/profile.jpg"
+                   alt="Portrait of Mohammed Ayan Khan"
+                   class="hero-avatar img-fluid"
+                   onerror="this.src='https://ui-avatars.com/api/?name=Mohammed+Ayan+Khan&size=400&background=4f46e5&color=fff&rounded=true&font-size=0.35&bold=true'"
+                   fetchpriority="high" />
+              <div class="hero-badge hero-badge--available" aria-label="Open to opportunities">
+                <i class="bi bi-circle-fill text-success me-1" style="font-size:.6rem;"></i>
+                Open to Internships
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section-pad bg-white" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title" id="about-heading">About <span class="highlight">Me</span></h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle text-muted">Get to know me better</p>
+        </div>
+
+        <div class="row g-5 align-items-center">
+          <!-- Image side -->
+          <div class="col-lg-5 text-center">
+            <div class="about-img-wrapper mx-auto">
+              <img src="assets/profile.jpg"
+                   alt="Mohammed Ayan Khan – about photo"
+                   class="about-img img-fluid rounded-4 shadow"
+                   onerror="this.src='https://ui-avatars.com/api/?name=Ayan+Khan&size=500&background=4f46e5&color=fff&rounded=false&font-size=0.33&bold=true'" />
+              <div class="about-stat-card shadow" aria-label="Status">
+                <i class="bi bi-mortarboard-fill text-primary fs-3 mb-1"></i>
+                <p class="mb-0 fw-semibold small">BE – CSE</p>
+                <p class="mb-0 text-muted" style="font-size:.75rem;">2023 – 2027</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text side -->
+          <div class="col-lg-7">
+            <span class="badge bg-primary-soft text-primary mb-3 px-3 py-2 rounded-pill">
+              <i class="bi bi-person-fill me-1"></i> Who am I?
+            </span>
+            <h3 class="fw-bold mb-3">Passionate CSE Student &amp; Aspiring Developer</h3>
+            <p class="text-muted mb-3">
+              I'm <strong>Mohammed Ayan Khan</strong>, a Computer Science &amp; Engineering student currently
+              in my second year at <strong>C. Byregowda Institute of Technology (CBIT)</strong>, Kolar, Karnataka.
+              I'm based in Shivara Patna, Malur, Kolar District and I love turning ideas into real digital products through code.
+            </p>
+            <p class="text-muted mb-4">
+              As a fresher, I focus on building a solid foundation in both frontend and backend technologies.
+              I'm always curious, always learning — whether it's picking up a new framework or solving
+              algorithmic problems late at night.
+            </p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <ul class="list-unstyled about-info-list mb-0">
+                  <li><i class="bi bi-person-fill text-primary me-2"></i><strong>Name:</strong> Mohammed Ayan Khan</li>
+                  <li><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Location:</strong> Malur, Kolar, Karnataka</li>
+                  <li><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Phone:</strong> +91 97405 83903</li>
+                  <li><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> ayankhanmohammed100@gmail.com</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="list-unstyled about-info-list mb-0">
+                  <li><i class="bi bi-mortarboard-fill text-primary me-2"></i><strong>Degree:</strong> BE in CSE</li>
+                  <li><i class="bi bi-calendar-fill text-primary me-2"></i><strong>Batch:</strong> 2023 – 2027</li>
+                  <li><i class="bi bi-translate text-primary me-2"></i><strong>Languages:</strong> Kannada, Hindi, English</li>
+                  <li><i class="bi bi-briefcase-fill text-primary me-2"></i><strong>Status:</strong> Fresher</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#contact" class="btn btn-primary rounded-pill px-4">
+                <i class="bi bi-chat-dots-fill me-2"></i>Hire Me
+              </a>
+              <a href="https://github.com/mdayankhan60" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-outline-primary rounded-pill px-4">
+                <i class="bi bi-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education" class="section-pad bg-light" aria-labelledby="edu-heading">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title" id="edu-heading">My <span class="highlight">Education</span></h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle text-muted">Academic background &amp; qualifications</p>
+        </div>
+
+        <div class="timeline">
+          <!-- BE CSE only with College Photo -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="card edu-card shadow-sm border-0 rounded-4 overflow-hidden">
+              <div class="row g-0">
+                <div class="col-md-5 position-relative">
+                  <img src="assets/college.jpg"
+                       alt="C. Byregowda Institute of Technology (CBIT), Kolar campus entrance"
+                       class="w-100 h-100 object-fit-cover"
+                       style="min-height: 220px;" />
+                  <span class="badge bg-dark bg-opacity-75 text-white position-absolute bottom-0 start-0 m-3 rounded-pill px-3 py-1 small">
+                    <i class="bi bi-geo-alt-fill text-danger me-1"></i>Kolar, Karnataka
+                  </span>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body p-4 p-lg-4 d-flex flex-column justify-content-center h-100">
+                    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                      <div>
+                        <span class="badge bg-primary rounded-pill mb-1">2023 – 2027</span>
+                        <h5 class="card-title fw-bold mb-0">Bachelor of Engineering – Computer Science &amp; Engineering</h5>
+                      </div>
+                      <span class="badge bg-warning text-dark rounded-pill align-self-start">Pursuing</span>
+                    </div>
+                    <p class="text-primary fw-semibold mb-2">
+                      <i class="bi bi-building me-1"></i>C. Byregowda Institute of Technology (CBIT), Kolar
+                    </p>
+                    <p class="text-muted mb-0">
+                      Currently studying core Computer Science subjects including Data Structures &amp; Algorithms,
+                      Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks,
+                      Web Development technologies, and AI/ML fundamentals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section-pad bg-white" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title" id="skills-heading">Technical <span class="highlight">Skills</span></h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle text-muted">Technologies I work with</p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Frontend -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card card border-0 shadow-sm rounded-4 h-100">
+              <div class="card-body p-4">
+                <div class="skill-card-icon mb-3" aria-hidden="true" style="--icon-color: #e34c26;">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <h5 class="fw-bold mb-3">Frontend</h5>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-filetype-html text-danger me-1"></i>HTML5</span>
+                    <small class="text-muted">80%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="HTML5 skill level 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-danger" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-filetype-css text-primary me-1"></i>CSS3</span>
+                    <small class="text-muted">75%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="CSS3 skill level 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-primary" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-filetype-js text-warning me-1"></i>JavaScript</span>
+                    <small class="text-muted">65%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="JavaScript skill level 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" style="width: 65%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-bootstrap-fill me-1" style="color:#7952b3;"></i>Bootstrap 5</span>
+                    <small class="text-muted">78%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="Bootstrap skill level 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width:78%;background:#7952b3;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card card border-0 shadow-sm rounded-4 h-100">
+              <div class="card-body p-4">
+                <div class="skill-card-icon mb-3" aria-hidden="true" style="--icon-color: #339933;">
+                  <i class="bi bi-server"></i>
+                </div>
+                <h5 class="fw-bold mb-3">Backend &amp; Databases</h5>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-node-plus-fill text-success me-1"></i>Node.js</span>
+                    <small class="text-muted">50%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="Node.js skill level 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-database-fill text-success me-1"></i>MongoDB</span>
+                    <small class="text-muted">45%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="MongoDB skill level 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 45%"></div>
+                  </div>
+                </div>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-filetype-py text-info me-1"></i>Python</span>
+                    <small class="text-muted">60%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="Python skill level 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-info" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-database-fill-check text-primary me-1"></i>SQL / MySQL</span>
+                    <small class="text-muted">55%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="SQL skill level 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-primary" style="width: 55%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card card border-0 shadow-sm rounded-4 h-100">
+              <div class="card-body p-4">
+                <div class="skill-card-icon mb-3" aria-hidden="true" style="--icon-color: #f05032;">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <h5 class="fw-bold mb-3">Tools &amp; Other</h5>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-git text-danger me-1"></i>Git / GitHub</span>
+                    <small class="text-muted">70%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="Git skill level 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-danger" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-boxes text-info me-1"></i>React (Basics)</span>
+                    <small class="text-muted">40%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="React skill level 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-info" style="width: 40%"></div>
+                  </div>
+                </div>
+                <div class="skill-item mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-terminal-fill text-secondary me-1"></i>VS Code / IDE</span>
+                    <small class="text-muted">85%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="VS Code skill level 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-secondary" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="skill-label"><i class="bi bi-c-circle text-warning me-1"></i>C / C++</span>
+                    <small class="text-muted">65%</small>
+                  </div>
+                  <div class="progress skill-progress" role="progressbar" aria-label="C/C++ skill level 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tech badge cloud -->
+        <div class="mt-5 text-center">
+          <p class="text-muted mb-3 fw-semibold">Also familiar with:</p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Bootstrap 5</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">GitHub</span>
+            <span class="tech-badge">C / C++</span>
+            <span class="tech-badge">VS Code</span>
+            <span class="tech-badge">Figma</span>
+            <span class="tech-badge">Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section-pad bg-light" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title" id="projects-heading">My <span class="highlight">Projects</span></h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle text-muted">A showcase of what I've built</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- AI Cyber Threat Detection & Auto Defence – Featured Project -->
+          <div class="col-lg-10">
+            <article class="project-card card border-0 shadow rounded-4 overflow-hidden">
+              <div class="row g-0">
+
+                <!-- Dark cyber visual panel -->
+                <div class="col-md-5 position-relative d-flex align-items-center justify-content-center"
+                     style="min-height:340px;background:linear-gradient(135deg,#0f0c29 0%,#302b63 50%,#24243e 100%);">
+                  <!-- Scan-line overlay -->
+                  <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" aria-hidden="true"
+                       style="background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,245,160,.03) 3px,rgba(0,245,160,.03) 4px);pointer-events:none;"></div>
+
+                  <div class="text-center position-relative p-4" style="z-index:1;">
+                    <div class="mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle"
+                         style="width:90px;height:90px;background:rgba(0,245,160,.12);border:2px solid rgba(0,245,160,.4);">
+                      <i class="bi bi-shield-fill-check" style="font-size:2.8rem;color:#00f5a0;"></i>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center mb-3">
+                      <span class="badge rounded-pill px-3 py-2"
+                            style="background:rgba(0,245,160,.15);color:#00f5a0;border:1px solid rgba(0,245,160,.35);font-size:.78rem;">
+                        <i class="bi bi-cpu-fill me-1"></i>AI Powered
+                      </span>
+                      <span class="badge rounded-pill px-3 py-2"
+                            style="background:rgba(0,194,255,.15);color:#00c2ff;border:1px solid rgba(0,194,255,.35);font-size:.78rem;">
+                        <i class="bi bi-lightning-fill me-1"></i>Real-Time
+                      </span>
+                      <span class="badge rounded-pill px-3 py-2"
+                            style="background:rgba(255,100,100,.15);color:#ff6464;border:1px solid rgba(255,100,100,.35);font-size:.78rem;">
+                        <i class="bi bi-check2-circle me-1"></i>Working
+                      </span>
+                    </div>
+                    <p class="mb-0 small" style="color:rgba(255,255,255,.45);font-family:'Fira Code',monospace;letter-spacing:.05em;">
+                      Status: <span style="color:#00f5a0;">&#9679; ACTIVE</span>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Content panel -->
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column p-4 p-lg-5 h-100">
+                    <span class="badge bg-danger text-white rounded-pill mb-3 px-3 py-2 align-self-start">
+                      <i class="bi bi-star-fill me-1"></i>Featured Project
+                    </span>
+
+                    <h4 class="fw-bold mb-3" style="line-height:1.3;">
+                      AI Cyber Threat Detection &amp; Auto Defence
+                    </h4>
+
+                    <p class="text-muted mb-3" style="line-height:1.75;">
+                      A fully <strong>working</strong> AI-powered cybersecurity system that monitors network
+                      traffic and system behaviour in real time, automatically detects threats such as
+                      DDoS attacks, port scans, malware patterns, and anomalous intrusions, and triggers
+                      an automated defence response — all without human intervention.
+                    </p>
+
+                    <ul class="list-unstyled mb-4" style="font-size:.9rem;">
+                      <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Real-time traffic analysis</strong> using ML anomaly detection
+                      </li>
+                      <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Auto-blocking</strong> of malicious IPs &amp; suspicious ports
+                      </li>
+                      <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Threat classification</strong> — DDoS, Intrusion, Malware, Port Scan
+                      </li>
+                      <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Live alert dashboard</strong> with threat logs &amp; severity scores
+                      </li>
+                      <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Auto-defence engine</strong> with configurable response rules
+                      </li>
+                    </ul>
+
+                    <div class="tech-tags mb-4">
+                      <span class="tech-tag">Python</span>
+                      <span class="tech-tag">Machine Learning</span>
+                      <span class="tech-tag">Scikit-learn</span>
+                      <span class="tech-tag">Scapy</span>
+                      <span class="tech-tag">Flask</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">HTML5</span>
+                      <span class="tech-tag">CSS3</span>
+                      <span class="tech-tag">Socket.IO</span>
+                      <span class="tech-tag">iptables</span>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2 mt-auto">
+                      <a href="#" class="btn btn-primary rounded-pill px-4"
+                         aria-label="View AI Cyber Threat Detection live demo">
+                        <i class="bi bi-eye-fill me-2"></i>Live Demo
+                      </a>
+                      <a href="https://github.com/mdayankhan60" target="_blank" rel="noopener noreferrer"
+                         class="btn btn-outline-secondary rounded-pill px-4"
+                         aria-label="GitHub source for AI Cyber Threat Detection">
+                        <i class="bi bi-github me-2"></i>GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="https://github.com/mdayankhan60" target="_blank" rel="noopener noreferrer"
+             class="btn btn-outline-primary btn-lg rounded-pill px-5">
+            <i class="bi bi-github me-2"></i>View All on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section-pad bg-white" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title" id="contact-heading">Get In <span class="highlight">Touch</span></h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle text-muted">Feel free to reach out — I'm always open to new opportunities!</p>
+        </div>
+
+        <!-- Contact info only – no form -->
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+              <h4 class="fw-bold mb-4">Contact Information</h4>
+
+              <div class="contact-info-item d-flex align-items-start gap-3 mb-4">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Email</h6>
+                  <a href="mailto:ayankhanmohammed100@gmail.com" class="text-muted text-decoration-none hover-primary">
+                    ayankhanmohammed100@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-info-item d-flex align-items-start gap-3 mb-4">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Phone</h6>
+                  <a href="tel:+919740583903" class="text-muted text-decoration-none hover-primary">+91 97405 83903</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item d-flex align-items-start gap-3 mb-4">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Location</h6>
+                  <p class="text-muted mb-0">Shivara Patna, Malur (T), Kolar (D), Karnataka, India</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item d-flex align-items-start gap-3 mb-4">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-github"></i></div>
+                <div>
+                  <h6 class="fw-semibold mb-1">GitHub</h6>
+                  <a href="https://github.com/mdayankhan60" target="_blank" rel="noopener noreferrer"
+                     class="text-muted text-decoration-none hover-primary">
+                    github.com/mdayankhan60
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-info-item d-flex align-items-start gap-3 mb-5">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-linkedin"></i></div>
+                <div>
+                  <h6 class="fw-semibold mb-1">LinkedIn</h6>
+                  <a href="#" class="text-muted text-decoration-none hover-primary">Mohammed Ayan Khan</a>
+                </div>
+              </div>
+
+              <div class="social-links-bar d-flex gap-3">
+                <a href="https://github.com/mdayankhan60" target="_blank" rel="noopener noreferrer"
+                   class="social-icon" aria-label="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:ayankhanmohammed100@gmail.com" class="social-icon" aria-label="Email">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a href="tel:+919740583903" class="social-icon" aria-label="Phone">
+                  <i class="bi bi-telephone-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-4 text-center text-md-start">
+          <a class="footer-brand fw-bold text-white text-decoration-none" href="#home" aria-label="Back to top">
+            <span class="brand-bracket">&lt;</span>Ayan<span class="brand-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline mt-1 mb-0">CSE Student | Aspiring Developer</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <div class="d-flex gap-3 justify-content-center">
+            <a href="https://github.com/mdayankhan60" target="_blank" rel="noopener noreferrer"
+               class="footer-social" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:ayankhanmohammed100@gmail.com" class="footer-social" aria-label="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="tel:+919740583903" class="footer-social" aria-label="Phone">
+              <i class="bi bi-telephone-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center text-md-end">
+          <p class="footer-copyright mb-0">
+            &copy; <span id="footerYear"></span> Mohammed Ayan Khan.<br class="d-md-none" />
+            All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top" hidden>
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
